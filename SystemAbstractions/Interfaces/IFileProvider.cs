@@ -18,7 +18,7 @@
         string ReadAllText(string path);
 
         /// <inheritdoc cref="File.ReadAllBytes(string)"/>
-        byte[] ReadAllBystes(string path);
+        byte[] ReadAllBytes(string path);
 
         /// <inheritdoc cref="File.WriteAllBytes(string, byte[])"/>
         void WriteAllBytes(string paths, byte[] data);
