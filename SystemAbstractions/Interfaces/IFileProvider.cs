@@ -19,5 +19,8 @@
 
         /// <inheritdoc cref="File.Create(string)"/>
         Stream Create(string path);
+
+        /// <inheritdoc cref="File.WriteAllText(string,string)"/>
+        void WriteAllText(string filePath, string text);
     }
 }

@@ -41,5 +41,11 @@ namespace Abstractions.SystemAbstractions.Abstractions
         {
             return File.Create(path);
         }
+
+        /// <inheritdoc />
+        public void WriteAllText(string filePath, string text)
+        {
+            File.WriteAllText(filePath, text);
+        }
     }
 }
