@@ -3,7 +3,7 @@
   <PropertyGroup>
     <RootNamespace>$(SolutionName).$(MSBuildProjectName)</RootNamespace>
     <PackageId>$(SolutionName).$(MSBuildProjectName)</PackageId>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <Description>Wrapper for System.IO Library</Description>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

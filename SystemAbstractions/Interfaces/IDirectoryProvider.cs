@@ -12,7 +12,7 @@
         string[] GetDirectories(string directory);
 
         /// <inheritdoc cref="Directory.GetParent(string)"/>
-        string GetParent(string directory);
+        DirectoryInfo GetParent(string directory);
 
         /// <inheritdoc cref="Directory.Exists(string)" />
         bool Exists(string directory);

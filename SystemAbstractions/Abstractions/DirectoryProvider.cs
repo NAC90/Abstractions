@@ -43,8 +43,8 @@ public class DirectoryProvider : IDirectoryProvider
     }
 
     /// <inheritdoc />
-    public string GetParent(string directory)
+    public DirectoryInfo GetParent(string directory)
     {
-        return Directory.GetParent(directory)?.FullName;
+        return Directory.GetParent(directory);
     }
 }

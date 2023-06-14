@@ -37,6 +37,12 @@ namespace Abstractions.SystemAbstractions.Abstractions
         }
 
         /// <inheritdoc />
+        public byte[] ReadAllBystes(string path)
+        {
+            return File.ReadAllBytes(path);
+        }
+
+        /// <inheritdoc />
         public Stream Create(string path)
         {
             return File.Create(path);
