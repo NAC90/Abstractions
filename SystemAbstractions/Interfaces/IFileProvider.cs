@@ -17,6 +17,9 @@
         /// <inheritdoc cref="File.ReadAllText(string)"/>
         string ReadAllText(string path);
 
+        /// <inheritdoc cref="File.WriteAllBytes(string, byte[])"/>
+        void WriteAllBytes(string paths, byte[] data);
+
         /// <inheritdoc cref="File.Create(string)"/>
         Stream Create(string path);
 

@@ -47,5 +47,11 @@ namespace Abstractions.SystemAbstractions.Abstractions
         {
             File.WriteAllText(filePath, text);
         }
+
+        /// <inheritdoc />
+        public void WriteAllBytes(string paths, byte[] data)
+        {
+            File.WriteAllBytes(paths, data);
+        }
     }
 }

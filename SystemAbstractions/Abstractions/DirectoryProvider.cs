@@ -13,6 +13,12 @@ public class DirectoryProvider : IDirectoryProvider
     }
 
     /// <inheritdoc />
+    public void Delete(string directory, bool recursive)
+    {
+        Directory.Delete(directory, recursive);
+    }
+
+    /// <inheritdoc />
     public bool Exists(string directory)
     {
         return Directory.Exists(directory);
@@ -28,6 +34,12 @@ public class DirectoryProvider : IDirectoryProvider
     public string[] GetFiles(string directory)
     {
         return Directory.GetFiles(directory);
+    }
+
+    /// <inheritdoc />
+    public string[] GetFiles(string directory, string searchPattern, SearchOption searchOptions)
+    {
+        return Directory.GetFiles(directory, searchPattern, searchOptions);
     }
 
     /// <inheritdoc />
