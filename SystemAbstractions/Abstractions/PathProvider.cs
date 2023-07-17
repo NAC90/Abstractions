@@ -17,5 +17,17 @@ namespace Abstractions.SystemAbstractions.Abstractions
         {
             return Path.GetExtension(path);
         }
+
+        /// <inheritdoc />
+        public string GetFileNameWithoutExtension(string path)
+        {
+            return Path.GetFileNameWithoutExtension(path);
+        }
+
+        /// <inheritdoc />
+        public string GetFullPath(string path)
+        {
+            return Path.GetFullPath(path);
+        }
     }
 }
