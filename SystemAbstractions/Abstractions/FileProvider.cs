@@ -59,5 +59,11 @@ namespace Abstractions.SystemAbstractions.Abstractions
         {
             File.WriteAllBytes(paths, data);
         }
+
+        /// <inheritdoc />
+        public void Copy(string sourcePath, string destinationPath, bool shouldOverride)
+        {
+            File.Copy(sourcePath, destinationPath, shouldOverride);
+        }
     }
 }

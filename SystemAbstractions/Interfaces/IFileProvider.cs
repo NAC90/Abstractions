@@ -8,6 +8,9 @@
         /// <inheritdoc cref="File.Delete(string)"/>
         void Delete(string path);
 
+        /// <inheritdoc cref="File.Copy(string, string, bool)"/>
+        void Copy(string sourcePath, string destinationPath, bool shouldOverride);
+
         /// <inheritdoc cref="File.OpenRead(string)"/>
         Stream OpenRead(string path);
 
