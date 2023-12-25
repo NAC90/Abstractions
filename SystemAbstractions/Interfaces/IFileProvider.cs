@@ -11,6 +11,9 @@
         /// <inheritdoc cref="File.Copy(string, string, bool)"/>
         void Copy(string sourcePath, string destinationPath, bool shouldOverride);
 
+        /// <inheritdoc cref="File.Move(string, string, bool)"/>
+        void Move(string sourcePath, string destinationPath, bool shouldOverride);
+
         /// <inheritdoc cref="File.OpenRead(string)"/>
         Stream OpenRead(string path);
 

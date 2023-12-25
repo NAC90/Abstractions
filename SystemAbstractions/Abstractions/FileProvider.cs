@@ -65,5 +65,11 @@ namespace Abstractions.SystemAbstractions.Abstractions
         {
             File.Copy(sourcePath, destinationPath, shouldOverride);
         }
+
+        /// <inheritdoc />
+        public void Move(string sourcePath, string destinationPath, bool shouldOverride)
+        {
+            File.Move(sourcePath, destinationPath, shouldOverride);
+        }
     }
 }
