@@ -1,5 +1,6 @@
 ﻿using Abstractions.SystemAbstractions.Interfaces;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 
 namespace Abstractions.SystemAbstractions.Abstractions
 {
@@ -70,6 +71,24 @@ namespace Abstractions.SystemAbstractions.Abstractions
         public void Move(string sourcePath, string destinationPath, bool shouldOverride)
         {
             File.Move(sourcePath, destinationPath, shouldOverride);
+        }
+
+        /// <inheritdoc />
+        public string GetExtension(string filePath)
+        {
+            return new FileInfo(filePath).Extension;
+        }
+
+        /// <inheritdoc />
+        public DateTime GetLastWriteTime(string filePath)
+        {
+            return new FileInfo(filePath).LastWriteTime;
+        }
+
+        /// <inheritdoc />
+        public DateTime GetCreationTime(string filePath)
+        {
+            return new FileInfo(filePath).CreationTime;
         }
     }
 }

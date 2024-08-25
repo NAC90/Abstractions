@@ -34,5 +34,14 @@
 
         /// <inheritdoc cref="File.WriteAllText(string,string)"/>
         void WriteAllText(string filePath, string text);
+
+        /// <inheritdoc cref="FileInfo.Extension"/>
+        string GetExtension(string filePath);
+
+        /// <inheritdoc cref="FileInfo.LastWriteTime"/>
+        DateTime GetLastWriteTime(string filePath);
+
+        /// <inheritdoc cref="FileInfo.CreationTime"/>
+        DateTime GetCreationTime(string filePath);
     }
 }
